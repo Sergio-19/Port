@@ -1,0 +1,37 @@
+
+
+.blogWrap{
+    padding: 1vw .5vw;
+}
+
+.blog{
+    background: #fff;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin: 1.3vw auto;
+    padding: .5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogImg{
+    width: 40%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+    }
+}
+
+.blogTxt{
+    width: 55%;
+    text-align: center;
+}

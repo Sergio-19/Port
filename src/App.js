@@ -1,26 +1,59 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {connect} from 'react-redux'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.scss';
+import { MainContext } from './context/mainContext';
+import { Layout } from './components/layout/Layout';
+import { menuHandler } from './redux/actionCreators/menu';
+import { getBlogs } from './redux/actionCreators/blog';
+
+
+class App extends React.Component{
+
+
+
+  componentDidMount(){
+    this.props.getBlogs()
+  }
+
+
+  render(){
+
+    return(
+      <MainContext.Provider  value = {{
+        state: this.props
+      }}>
+         <Layout/>
+      </MainContext.Provider>
+       
+
+     
+    )
+  }
 }
 
-export default App;
+
+
+
+
+
+
+function mapStateToProps(state){
+  return{
+    menu: state.menu.showMenu,
+    blog: state.blog.blogs
+
+  }
+}
+
+function mapDispatchToProps(dispatch){
+  return{
+
+    menuHandler: ()=> dispatch(menuHandler()),
+    getBlogs: ()=> dispatch(getBlogs())
+
+  }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
