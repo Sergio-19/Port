@@ -8,7 +8,8 @@
     padding-top: .4vw;
     padding-bottom: .7vw; 
     img{
-        max-width: 26vw;
+        // max-width: 26vw;
+        max-width: 90%;
 
     }
 }
@@ -34,7 +35,7 @@ nav{
             a{
                 text-decoration: none;
                 font-family: 'Nunito Sans', sans-serif;
-                font-size: 1.1vw;
+                font-size: 2.2vw;
                 color: #43433D;
             }
 
@@ -67,7 +68,7 @@ nav{
             a{
                 text-decoration: none;
                 font-family: 'Nunito Sans', sans-serif;
-                font-size: 1.1vw;
+                font-size: 3vw;
                 color: #43433D;
                 
             }
@@ -89,7 +90,8 @@ nav{
 
     i{
         margin-left: 5vw;
-        font-size: 1.2vw;
+        font-size: 4vw;
+        font-weight: 700;
         color: #43433D;
     }
 
@@ -110,5 +112,12 @@ nav{
 
     .adapt{
         display: block;
+        margin-bottom: 20px;
+    }
+
+    .logo{
+        img{
+           
+        }
     }
 }

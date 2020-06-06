@@ -35,3 +35,16 @@
     width: 55%;
     text-align: center;
 }
+@media screen and(max-width: 768px){
+
+    .blog{
+        display: flex;
+        flex-direction: column;
+        .blogImg{
+            width: 100%;
+        }
+        .blogTxt{
+            width: 100%;
+        }
+    }
+}

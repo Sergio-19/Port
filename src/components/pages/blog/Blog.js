@@ -14,6 +14,7 @@ const blogs = state.blog
         
        {Object.keys(blogs).map((blog, i)=>{
            return(
+
             <div className = 'blog' key = {i}>
             <div className = 'blogImg'>
             <img src = {blogs[blog].img} alt = {blogs[blog].img}/>
@@ -25,11 +26,8 @@ const blogs = state.blog
            {blogs[blog].text}
     
             </p>
-            
             </div>
-            
-            
-            </div>
+             </div>
            )
        })}
         
