@@ -33,8 +33,9 @@
   -ms-border-radius: 6px    ;
   -o-border-radius: 6px    ;
   overflow: hidden;
-  width: 18vw;
+  max-width: 18vw;
 //   height: 16vw;
+min-width: 120px;
 
   img{
       width: 100%;
