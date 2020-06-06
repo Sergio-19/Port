@@ -28,7 +28,7 @@ if(state.menu){
                     />
                 </div>
 
-                <div className = 'adaptNav' style = {{height: state.menu ? '30vw' : '.2px', transition: 'all .3s ease-in'}}>
+                <div className = 'adaptNav' style = {{height: state.menu ? '12rem' : '.2px', transition: 'all .3s ease-in'}}>
                 <ul>
                     <li><NavLink to = '/'>Главная</NavLink></li>
                     <li><NavLink to = '/history'>История</NavLink></li>

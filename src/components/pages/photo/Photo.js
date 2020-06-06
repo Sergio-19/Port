@@ -19,7 +19,7 @@ export const Photo = () =>{
 
               {Object.keys(state.photo).map((photo, i)=>{
                   return(
-                    <div className = 'photoPageCard' key = {state.photo[photo].id + i}>
+                    <div className = 'photoPageCard' key = {i}>
                     <img src = {state.photo[photo].img} alt = {state.photo[photo].img}
                          onClick = {()=> state.showPhotoHandler(photo, state.photo)}
                     
