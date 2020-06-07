@@ -8,6 +8,7 @@ import {Blog} from '../pages/blog/Blog'
 import {Photo} from '../pages/photo/Photo'
 import {Info} from '../pages/info/Info'
 import { Footer } from '../footer/Footer';
+import { Article } from '../pages/article/Article';
 
 
 export const Layout = () =>{
@@ -24,7 +25,8 @@ export const Layout = () =>{
                  <Route path = '/history' render = {()=> <History />}/>
                  <Route path = '/blog' render = {()=> <Blog />}/>  
                  <Route path = '/photo' render = {()=> <Photo />}/>   
-                 <Route path = '/info' render = {()=> <Info />}/>    
+                 <Route path = '/info' render = {()=> <Info />}/> 
+                 <Route path = '/article''' '\"' render = {()=> <Article />}/>    
 
             </Switch>
 

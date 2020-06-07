@@ -1,0 +1,22 @@
+
+
+.inside{
+    display: flex;
+    justify-content: center;
+
+    input{
+        text-align: center;
+        max-width: 400px;
+        height: 2rem;
+        border: 1px solid #ccc;
+        border-radius: 5px    ;
+        -webkit-border-radius: 5px    ;
+        -moz-border-radius: 5px    ;
+        -ms-border-radius: 5px    ;
+        -o-border-radius: 5px    ;
+}
+}
+
+.infoPage{
+    text-align: center;
+}

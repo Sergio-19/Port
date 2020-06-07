@@ -24,7 +24,7 @@ const blogs = state.blog
             <h3>{blogs[blog].head}</h3>
             <p>
            {blogs[blog].text}
-    
+            <span> Далее...</span>
             </p>
             </div>
              </div>

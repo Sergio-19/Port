@@ -34,6 +34,15 @@
 .blogTxt{
     width: 55%;
     text-align: center;
+
+    span{
+        font-weight: 600;
+        cursor: pointer;
+        color: #1E1EE1;
+    }
+    span:hover{
+        opacity: .6;
+    }
 }
 @media screen and(max-width: 768px){
 

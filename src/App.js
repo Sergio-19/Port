@@ -9,6 +9,7 @@ import { getPhoto, showPhotoHandler, hidePhotoHandler} from './redux/actionCreat
 import { getBlogs } from './redux/actionCreators/blog';
 import { Mask } from './components/mask/Mask';
 import { ModalPhoto } from './components/modalPhoto/ModalPhoto';
+import { goPassHandler } from './redux/actionCreators/pass';
 
 
 class App extends React.Component{
@@ -52,9 +53,15 @@ function mapStateToProps(state){
   return{
     menu: state.menu.showMenu,
     blog: state.blog.blogs,
+
     showPhoto: state.photo.showPhoto,
     photoId: state.photo.photoId,
-    photo: state.photo.photo
+    photo: state.photo.photo,
+
+    password: state.pass.password,
+    passwordValue: state.pass.passwordValue,
+    access: state.pass.access
+
 
   }
 }
@@ -66,7 +73,8 @@ function mapDispatchToProps(dispatch){
     getBlogs: ()=> dispatch(getBlogs()),
     getPhoto: ()=> dispatch(getPhoto()),
     showPhotoHandler: (id, photos)=> dispatch(showPhotoHandler(id, photos)),
-    hidePhotoHandler: ()=> dispatch(hidePhotoHandler())
+    hidePhotoHandler: ()=> dispatch(hidePhotoHandler()),
+    goPassHandler: (value)=> dispatch(goPassHandler(value))
 
   }
 }
